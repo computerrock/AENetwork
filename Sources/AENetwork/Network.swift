@@ -16,29 +16,17 @@ open class Network {
 
     // MARK: Properties
 
-    public let reachability: Reachability
     public let fetcher: Fetcher
 
     // MARK: Init
 
-    public init(reachability: Reachability = Reachability(),
-                fetcher: Fetcher = Fetcher()) {
-        self.reachability = reachability
+    public init(fetcher: Fetcher = Fetcher()) {
         self.fetcher = fetcher
     }
 
 }
 
 // MARK: - Facade
-
-public extension Network {
-    static var isOnline: Bool {
-        shared.reachability.state.isOnline
-    }
-    static var isOffline: Bool {
-        !isOnline
-    }
-}
 
 public extension URLRequest {
     func send(over network: Network = .shared, completion: @escaping Fetcher.Callback) {

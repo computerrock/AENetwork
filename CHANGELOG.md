@@ -1,5 +1,11 @@
 # Changelog
 
+## Version 0.10.0
+- **IMPORTANT:** This version has been introduced by Computer Rock in forked repository
+- Removed Reachability due to lack of support for watchOS -- use NWPathMonitor instead
+- Deployment target raised to iOS 14
+- Deprecations and Xcode warnings fixed
+
 ## Version 0.9.1
 - Add url parameters for DELETE requests
 - Bump deployment target to iOS 9
