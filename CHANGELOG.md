@@ -1,5 +1,8 @@
 # Changelog
 
+## Version 0.10.0
+- TBD
+
 ## Version 0.9.1
 - Add url parameters for DELETE requests
 - Bump deployment target to iOS 9
