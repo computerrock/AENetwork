@@ -1,5 +1,8 @@
 # Changelog
 
+## Version 0.10.1
+- Replace `JSONSerialization` with `JSONEncoder` as the fix for floating point values representation.
+
 ## Version 0.10.0
 - **IMPORTANT:** This version has been introduced by Computer Rock in forked repository
 - Removed Reachability due to lack of support for watchOS -- use NWPathMonitor instead
